@@ -876,6 +876,13 @@ print(gas_sensor.read_u16())</code></pre>
       </div>
 
       <p>실행하면 <strong>0 ~ 65535</strong> 사이의 숫자 하나가 출력됩니다.</p>
+
+      <div class="callout info">
+        <div class="callout-title">📖 ADC가 뭐예요?</div>
+        <p><strong>ADC</strong>는 <strong>A</strong>nalog-to-<strong>D</strong>igital <strong>C</strong>onverter — "아날로그를 디지털로 바꾸는 변환기"의 줄임말이에요.</p>
+        <p>센서가 만들어내는 신호는 <strong>아날로그</strong>(연속된 전압)지만, 컴퓨터는 <strong>숫자</strong>(디지털)만 이해할 수 있어요. ADC가 그 사이를 통역해주는 거죠. MQ-2 센서가 측정한 전압을 0~65535 사이 숫자로 바꿔서 우리에게 전달해줘요.</p>
+        <p style="margin-bottom: 0;">Pico의 26번 핀(<code>GP26</code>)이 <strong>ADC0</strong>이라는 ADC 입구 역할을 하고 있어서, 그 핀에 연결한 센서값을 읽을 수 있는 거예요.</p>
+      </div>
     </section>
 
     <!-- ═══════════ STEP 2 ═══════════ -->
