@@ -858,10 +858,10 @@ led = NeoPixel(Pin(16), 1, timing=TIMING)</code></pre>
         <h2>LED 1개 켜기 <span class="em">— 직접 RGB</span></h2>
       </div>
 
-      <h4>학습 목표</h4>
+      <h4>이번에 해볼 것</h4>
       <ul>
-        <li>RGB 색 모델 감각 익히기</li>
-        <li>0~255 값으로 색을 만드는 경험</li>
+        <li>0~255 사이 숫자 세 개를 섞어서 색 만들기</li>
+        <li>빨강·초록·파랑을 차례로 켜보기</li>
       </ul>
 
       <h4>코드</h4>
@@ -965,10 +965,10 @@ led.write()</code></pre>
         <h2>빨주노초파남보 <span class="em">— 직접 RGB + 리스트</span></h2>
       </div>
 
-      <h4>학습 목표</h4>
+      <h4>이번에 해볼 것</h4>
       <ul>
-        <li>리스트와 for 반복문으로 코드 정리하기</li>
-        <li>"한 번에 점프하는 색 변화"의 어색함 체감하기</li>
+        <li>색 7개를 리스트에 담아서 차례대로 켜기</li>
+        <li><code>for</code> 반복문으로 코드 짧게 만들기</li>
       </ul>
 
       <h4>코드</h4>
@@ -1021,11 +1021,10 @@ led.write()</code></pre>
         <h2>그라데이션 <span class="em">— 직접 RGB + 보간</span></h2>
       </div>
 
-      <h4>학습 목표</h4>
+      <h4>이번에 해볼 것</h4>
       <ul>
-        <li>"부드러움 = 단계 수"라는 감각</li>
-        <li>두 색 사이를 잇는 보간(interpolation) 개념</li>
-        <li>이 단계가 끝날 무렵 <strong>"이걸 일일이 짜는 건 너무 길다"</strong>는 답답함을 느끼는 것이 핵심</li>
+        <li>두 색 사이를 자연스럽게 잇는 그라데이션 만들기</li>
+        <li><code>STEPS</code> 값을 바꿔보면서 차이 관찰하기</li>
       </ul>
 
       <h4>코드</h4>
@@ -1094,14 +1093,14 @@ led.write()</code></pre>
         <ul>
           <li><code>STEPS = 50</code>을 <code>STEPS = 5</code>로 바꿔보세요. 다시 끊겨 보이죠?</li>
           <li><code>STEPS = 200</code>으로 늘리면? 더 부드러워지지만 시간이 오래 걸려요.</li>
-          <li><strong>"부드러움 = 단계 수"</strong>라는 감각을 몸으로 익히기</li>
+          <li>몇 단계여야 가장 자연스럽게 보이는지 직접 찾아보기.</li>
         </ul>
       </div>
 
       <div class="callout think">
-        <div class="callout-title">🤔 멈춰서 생각해보기</div>
-        <p>빨→주만 위 코드로 했어요. 빨주노초파남보 7색을 <strong>전부 그라데이션으로 연결</strong>하려면 위 for 반복문을 6번이나 복사해야 해요. 너무 귀찮죠? 게다가 코드도 지저분해져요.</p>
-        <p><strong>👉 여기서 바이브 코딩이 필요합니다.</strong> 내가 원하는 걸 말로 설명하고, AI에게 깔끔하게 짜달라고 부탁할 시간이에요.</p>
+        <div class="callout-title">🤔 잠깐, 생각해보기</div>
+        <p>위 코드로는 빨→주 하나만 했어요. 그런데 빨주노초파남보 7색을 <strong>전부 그라데이션으로 연결</strong>하려면 위 <code>for</code> 반복문을 6번이나 복사해야 해요. 너무 길어지죠?</p>
+        <p><strong>👉 다음 단계부터는 AI에게 부탁해볼 거예요.</strong> 내가 원하는 걸 말로 설명하면 AI가 깔끔하게 짜줍니다.</p>
       </div>
     </section>
 
@@ -1124,11 +1123,11 @@ led.write()</code></pre>
         <h2>무지개 자동 순환 <span class="em">— 🤖 바이브 코딩</span></h2>
       </div>
 
-      <h4>학습 목표</h4>
+      <h4>이번에 해볼 것</h4>
       <ul>
-        <li>내가 원하는 동작을 말로 명확하게 설명하기</li>
-        <li>AI가 제안한 코드를 읽고 이해하기</li>
-        <li>HSV 같은 새로운 개념을 AI를 통해 알게 되기</li>
+        <li>내가 원하는 동작을 AI에게 말로 설명해보기</li>
+        <li>AI가 만들어준 코드를 읽고 어떻게 작동하는지 살펴보기</li>
+        <li>받은 코드의 값을 바꿔서 내 취향대로 다듬기</li>
       </ul>
 
       <h4>📝 샘플 프롬프트</h4>
@@ -1252,11 +1251,11 @@ print("✅ 끝!")</code></pre>
         <h2>감정 표현 LED <span class="em">— 🤖 바이브 코딩 미니 프로젝트</span></h2>
       </div>
 
-      <h4>학습 목표</h4>
+      <h4>이번에 해볼 것</h4>
       <ul>
-        <li>함수로 코드 모듈화하기</li>
-        <li>AI에게 여러 기능이 들어간 프로그램 요청하기</li>
-        <li>직접 새 기능을 추가하며 <strong>모듈 단위 사고</strong> 익히기</li>
+        <li>3가지 모드(심장박동·사이렌·호흡)가 차례로 작동하는 작품 만들기</li>
+        <li>AI에게 여러 기능이 들어간 프로그램 요청해보기</li>
+        <li>나만의 4번째 모드를 직접 추가해보기</li>
       </ul>
 
       <h4>📝 샘플 프롬프트</h4>
@@ -1444,7 +1443,7 @@ print("✅ 끝!")</code></pre>
           <li>"축하 모드 추가해줘. 무지개 색이 빠르게 깜빡깜빡."</li>
           <li>"긴장 모드 추가해줘. 빨강이 불규칙하게 떨려."</li>
         </ul>
-        <p style="margin-top: 12px;">함수를 하나 더 만들어 끼워 넣는 경험 = <strong>모듈 단위 사고</strong>의 시작.</p>
+        <p style="margin-top: 12px;">친구들이 만든 모드도 구경해보고, 마음에 드는 게 있으면 내 코드에 가져와봐요.</p>
       </div>
     </section>
 
@@ -1460,34 +1459,34 @@ print("✅ 끝!")</code></pre>
             <tr>
               <th>단계</th>
               <th>방식</th>
-              <th>배운 것</th>
+              <th>한 일</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>01</td>
               <td><span class="stage-badge direct">직접 RGB</span></td>
-              <td>RGB 값으로 색 만들기</td>
+              <td>숫자 세 개로 색 만들기</td>
             </tr>
             <tr>
               <td>02</td>
               <td><span class="stage-badge direct">직접 RGB</span></td>
-              <td>리스트와 반복문</td>
+              <td>색 7개를 차례로 켜기</td>
             </tr>
             <tr>
               <td>03</td>
               <td><span class="stage-badge direct">직접 RGB</span></td>
-              <td>그라데이션 · 부드러움 = 단계 수</td>
+              <td>두 색 사이를 부드럽게 잇기</td>
             </tr>
             <tr>
               <td>04</td>
               <td><span class="stage-badge vibe">바이브 코딩</span></td>
-              <td>프롬프트 작성, HSV 색 모델</td>
+              <td>AI에게 무지개 자동 순환 부탁하기</td>
             </tr>
             <tr>
               <td>05</td>
               <td><span class="stage-badge vibe">바이브 코딩</span></td>
-              <td>함수로 코드 나누기</td>
+              <td>감정 표현 LED 3가지 모드 만들기</td>
             </tr>
           </tbody>
         </table>
