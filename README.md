@@ -1,47 +1,53 @@
-# Vibe.Lab / 당곡고 정보과학
+# Pico VIBE.LAB
 
-물리컴퓨팅 × 바이브 코딩 수업자료 모음. 라즈베리파이 피코 2 WH + MicroPython 환경에서, 직접 타이핑하는 단계로 시작해 AI에게 부탁하는 단계로 이어지는 학습 흐름을 다룹니다.
+**당곡고 × 수도여고 「인공지능과 피지컬 컴퓨팅」**
+
+손바닥만 한 라즈베리파이 피코 보드 하나로 빛을 만들고, 공기를 측정하고, 실시간으로 데이터를 그래프로 띄워보는 프로젝트 모음입니다.
 
 > **AI proposes, humans decide.**
 
-## 🌐 사이트
+## 🌐 사이트 바로가기
 
-배포된 사이트: `https://<your-github-id>.github.io/<repo-name>/`
+👉 `https://<your-github-id>.github.io/<repo-name>/`
 
-## 📚 레슨 목록
+## 📚 프로젝트
 
-| Lesson | 제목 | 단계 | 핵심 |
-|---|---|---|---|
-| 01 | 네오픽셀 LED로 배우는 바이브 코딩 입문 | 5단계 | WS2813 · RGB · HSV |
-| 02 | MQ-2 가스 센서로 만드는 실시간 모니터링 대시보드 | 8단계 | ADC · Wi-Fi · HTTP |
+| # | 제목 | 만들 것 |
+|---|---|---|
+| **01** | LED 한 개로 만드는 나만의 빛 작품 | 무지개·심장박동·사이렌·호흡 표현 |
+| **02** | 공기를 측정해서 웹 대시보드로 보기 | 가스 센서 + Wi-Fi 실시간 모니터링 |
 
-## 🛠 하드웨어
+## 🛠 준비물
 
-- Raspberry Pi Pico 2 WH (MicroPython)
-- WS2813 Mini NeoPixel
-- MQ-2 가스 센서
+- Raspberry Pi Pico 2 WH (MicroPython 설치)
+- WS2813 Mini NeoPixel (Lesson 01)
+- MQ-2 가스 센서 (Lesson 02)
+- Thonny IDE
+- Wi-Fi 환경 (Lesson 02)
 
 ## 📁 파일 구조
 
 ```
 .
-├── index.html              # 메인 인덱스 (레슨 목록)
-├── lesson01_led.html       # Lesson 01
-├── lesson02_mq2.html       # Lesson 02
+├── index.html              # 메인 페이지 (프로젝트 목록)
+├── lesson01_led.html       # Lesson 01 · LED 빛 작품
+├── lesson02_mq2.html       # Lesson 02 · 가스 센서 대시보드
 └── README.md
 ```
 
-## ✏️ 새 레슨 추가하기
+각 HTML은 외부 의존성 없이 그대로 브라우저에서 열립니다 (CDN으로 폰트·Prism만 로드).
 
-1. 기존 레슨 HTML 파일을 복사 (`lesson02_mq2.html` 권장 — 가장 다양한 컴포넌트 포함)
-2. 파일명을 `lessonNN_topic.html` 형식으로 변경
-3. 사이드바 `nav` 항목, 메인 콘텐츠, 푸터 수정
-4. `index.html`에 새 레슨 카드 추가
+## ✏️ 프로젝트 추가하기
 
-## 📝 라이선스
+1. `lesson02_mq2.html`을 복사 (컴포넌트가 가장 다양함)
+2. 파일명 `lessonNN_topic.html`
+3. 사이드바 `nav`, 본문 `section`, 푸터 수정
+4. `index.html`에 카드 추가
 
-수업용 자료. 동료 교사 활용 환영.
+## 🤝 함께 쓰는 분들께
+
+이 자료는 수업용으로 만들었지만, 다른 학교·다른 동아리에서도 자유롭게 가져다 쓰셔도 됩니다. 학교명 부분만 본인 환경에 맞게 바꾸시면 됩니다.
 
 ---
 
-© 2026 석리송 · 당곡고등학교 수리정보교육부
+© 2026 석리송 · 당곡고 × 수도여고 인공지능과 피지컬 컴퓨팅
